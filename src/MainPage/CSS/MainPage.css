@@ -1,0 +1,39 @@
+@import "../../reset.css";
+
+.main_page_wrap {
+    min-width: 1080px;
+    width: 100vw;
+    background-color: #e7e6e6;
+}
+
+.main_page {
+    min-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_page .slate_top {
+    width: 1080px;
+    height: 170px;
+    background-size: 1080px 170px;
+    background-image: url('../../img/slate_top.png');
+    display: inline-block;
+}
+
+.main_page .slate_top .find_video{
+    width: 500px;
+    height: 80px;
+    margin: 50px 100px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px dimgray;
+    color: white;
+    background-color: #b93b2d;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main_page .slate_bottom {
+    width: 1080px;
+    background-color: #222a35;
+    display: inline-block;
+}
