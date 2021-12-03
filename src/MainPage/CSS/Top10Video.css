@@ -1,0 +1,26 @@
+@import "../../reset.css";
+
+.top10_video_wrap {
+    padding: 0 50px 50px;
+}
+
+.top10_video_table .top10 {
+    caption-side: top;
+    background-color: #222a35;
+    padding: 30px 0 30px 0;
+    color: #f84e28;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.top10_video_table .table_cell{
+    font-size: 20px;
+}
+
+.top10_video_table .poster_cell {
+    height: 50px;
+    padding: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
