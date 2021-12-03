@@ -1,0 +1,44 @@
+@import "../reset.css";
+
+.research_page_wrap {
+    min-width: 1080px;
+    width: 100vw;
+    background-color: #e7e6e6;
+    padding: 50px 0;
+}
+
+.research_page {
+    width: 1080px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 180px 250px;
+}
+
+.research_page .question{
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 2px solid;
+    padding: 10px;
+    color: #f84e28;
+}
+
+.research_page .ans {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.research_page .ans_button{
+    display: inline-block;
+    width: 100px;
+    background-color: #f84e28;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px 1px gray;
+}
+
+.research_page .ans_blank{
+    display: inline-block;
+    width: 100px;
+}
