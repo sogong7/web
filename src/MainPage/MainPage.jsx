@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 
-import Top10Video from './Top10Video';
+import Top10Video from './Top10Video.jsx';
 import './CSS/MainPage.css';
 
 export default class MainPage extends Component {

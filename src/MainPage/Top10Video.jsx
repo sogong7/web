@@ -14,7 +14,7 @@ import Paper from '@mui/material/Paper';
 
 import './CSS/Top10Video.css';
 
-export default class MainPage extends Component {
+export default class Top10Video extends Component {
     constructor() {
         super();
 
