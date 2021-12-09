@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import { Button } from '@mui/material';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
@@ -11,13 +12,17 @@ export default class MainPage extends Component {
         super();
     }
 
+    handlePageChange(e) {
+        document.location.href = "/search"
+    }
+
     render() {
         return (<div>
         <Header />
         <div className="main_page_wrap">
             <div className="main_page">
                 <div className="slate_top">
-                    <Button className = "find_video">내가 원하는 영상 찾아보기</Button>
+                    <Button className = "find_video" onClick={this.handlePageChange}>내가 원하는 영상 찾아보기</Button>
                 </div>
                 <div className="slate_bottom">
                     <Top10Video />
