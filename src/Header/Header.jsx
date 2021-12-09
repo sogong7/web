@@ -17,10 +17,6 @@ export default class Header extends Component {
         return (<div className="header_wrap">
             <div className="header">
                 소공 7조
-                {is_login ?
-                    <span className="login_name">{this.state.user_name}</span>
-                    : <Button className = "login">로그인</Button>
-                }
             </div>
         </div>)
     }
