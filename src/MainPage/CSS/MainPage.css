@@ -3,12 +3,16 @@
 .main_page_wrap {
     min-width: 1080px;
     width: 100vw;
+    height: calc(100vh - 150px);
     background-color: #e7e6e6;
+    display: table;
 }
 
 .main_page {
+    display: table-cell;
+    vertical-align: middle;
     min-width: 1080px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 }
 
