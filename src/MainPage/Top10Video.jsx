@@ -68,7 +68,7 @@ export default class Top10Video extends Component {
         let { top10_video } = this.state;
 
         return (<div className="top10_video_wrap">
-            <TableContainer component={Paper} className="top10_video_table" style={{backgroundColor:'transparent', borderRadius: '0'}}>
+            <TableContainer component={Paper} className="top10_video_table" style={{backgroundColor:'transparent', borderRadius: '0', boxShadow: 'none'}}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <caption className="top10">Top 10</caption>
                     <TableBody style={{backgroundColor: 'white'}}>
