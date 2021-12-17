@@ -29,7 +29,7 @@ export default class ResearchPage extends Component {
             this.setState({
                 ans: [...this.state.ans, user_ans]
             })
-            // document.location.href = "/";
+            window.location.href = '/recommend';
         }
         this.setState({
             questionIndex: nextquestionIndex,
