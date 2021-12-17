@@ -68,7 +68,7 @@ export default class Top10Video extends Component {
         let { top10_video } = this.state;
 
         return (<div className="top10_video_wrap">
-            <TableContainer component={Paper} className="top10_video_table" style={{backgroundColor:'transparent', borderRadius: '0'}}>
+            <TableContainer component={Paper} className="top10_video_table" style={{backgroundColor:'transparent', borderRadius: '0', boxShadow: 'none'}}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <caption className="top10">Top 10</caption>
                     <TableBody style={{backgroundColor: 'white'}}>
@@ -80,7 +80,6 @@ export default class Top10Video extends Component {
                             <TableCell align="center"  className="table_cell" style={{ padding: "30" }} component="th" scope="row">
                                 {index + 1}
                             </TableCell>
-                            {console.log(row.poster)}
                             <TableCell align="center" className="table_cell poster_cell" style={{width: "5%", padding: "30", backgroundImage: `url(${row.poster})`}} />
                             <TableCell align="left"  className="table_cell" style={{width: "90%", padding: "30" }}>{row.name}</TableCell>
                             </TableRow>

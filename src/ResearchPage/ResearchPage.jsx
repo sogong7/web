@@ -29,7 +29,7 @@ export default class ResearchPage extends Component {
             this.setState({
                 ans: [...this.state.ans, user_ans]
             })
-            // document.location.href = "/";
+            window.location.href = '/recommend';
         }
         this.setState({
             questionIndex: nextquestionIndex,
@@ -45,7 +45,7 @@ export default class ResearchPage extends Component {
         <div className="research_page_wrap">
             <div className="research_page">
             { questionIndex != question.length
-              ? <div>
+              ? <div className="questionSet">
                     <div className="question">{question[questionIndex]}</div>
                     <div class="ans">
                         <Button className="ans_button" onClick={(e) => this.handleAddAns(e, 1)}>YES</Button>
