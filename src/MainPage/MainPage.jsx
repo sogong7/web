@@ -13,7 +13,7 @@ export default class MainPage extends Component {
     }
 
     handlePageChange(e) {
-        document.location.href = "/search"
+        window.location.href = '/search';
     }
 
     render() {
