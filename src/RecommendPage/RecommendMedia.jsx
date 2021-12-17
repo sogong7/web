@@ -67,6 +67,10 @@ export default class RecommmendMedia extends Component {
         }
     }
 
+    handldMediaPage(e) {
+        window.location.href = './media';
+    }
+
     render() {
         let { media } = this.state;
 
@@ -79,7 +83,9 @@ export default class RecommmendMedia extends Component {
                     <Slider {...settings}>
                         {media.map((medium) => (
                             <div className="slider_div">
-                                <div className="medium" style={{backgroundImage: `URL(${medium.poster})`}}></div>
+                                <div className="medium" style={{backgroundImage: `URL(${medium.poster})`}} 
+                                    onClick={this.handldMediaPage}>
+                                </div>
                             </div>
                         ))}
                     </Slider>
