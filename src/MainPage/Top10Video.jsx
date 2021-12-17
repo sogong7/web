@@ -80,7 +80,6 @@ export default class Top10Video extends Component {
                             <TableCell align="center"  className="table_cell" style={{ padding: "30" }} component="th" scope="row">
                                 {index + 1}
                             </TableCell>
-                            {console.log(row.poster)}
                             <TableCell align="center" className="table_cell poster_cell" style={{width: "5%", padding: "30", backgroundImage: `url(${row.poster})`}} />
                             <TableCell align="left"  className="table_cell" style={{width: "90%", padding: "30" }}>{row.name}</TableCell>
                             </TableRow>

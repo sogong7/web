@@ -12,8 +12,12 @@ export default class RecommendPage extends Component {
         return (<div>
             <Header />
             <div className='recommend_page_wrap'>
-                <RecommmendMedia />
-                <Top10Video />
+                <div className='recommend_page'>
+                    <RecommmendMedia />
+                    <div style={{width:"1080px", margin: "auto"}}>
+                        <Top10Video />
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>)

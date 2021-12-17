@@ -1,12 +1,19 @@
 @import "../../reset.css";
 
 .recommend_page_wrap {
-    min-width: 1080px;
     width: 100vw;
-    height: calc(100vh - 150px);
+    min-width: 1080px;
+    min-height: calc(100vh - 150px);
     background-color: #e7e6e6;
-    padding: 50px 0;
-    box-sizing: border-box;
-
     display: table;
+}
+
+.recommend_page {
+    display: table-cell;
+    width: 1080px;
+    margin: auto;
+}
+
+.recommend_page .top10_video_wrap {
+    padding: 0;
 }
