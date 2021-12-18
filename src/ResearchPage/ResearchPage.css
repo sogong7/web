@@ -3,15 +3,27 @@
 .research_page_wrap {
     min-width: 1080px;
     width: 100vw;
+    height: calc(100vh - 150px);
     background-color: #e7e6e6;
     padding: 50px 0;
+    box-sizing: border-box;
+
+    display: table;
 }
 
 .research_page {
     width: 1080px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 170px 250px;
+    padding: 150px 250px 170px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.research_page .questionSet {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .research_page .question{
@@ -41,4 +53,25 @@
 .research_page .ans_blank{
     display: inline-block;
     width: 100px;
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #f84e28;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }

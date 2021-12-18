@@ -11,16 +11,16 @@ export default class Header extends Component {
         }
     }
 
+    handldMainPage(e) {
+        window.location.href = '/';
+    }
+
     render() {
         let is_login = false;
 
         return (<div className="header_wrap">
             <div className="header">
-                소공 7조
-                {is_login ?
-                    <span className="login_name">{this.state.user_name}</span>
-                    : <Button className = "login">로그인</Button>
-                }
+                <button onClick={this.handldMainPage}>소공 7조</button>
             </div>
         </div>)
     }

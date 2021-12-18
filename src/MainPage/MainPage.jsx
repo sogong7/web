@@ -11,12 +11,16 @@ export default class MainPage extends Component {
         super();
     }
 
+    handlePageChange(e) {
+        window.location.href = '/search';
+    }
+
     render() {
         return (<div>
         <Header />
         <div className="main_page_wrap">
             <div className="main_page">
-                <div className="slate_top">
+                <div className="slate_top" onClick={this.handlePageChange}>
                     <Button className = "find_video">내가 원하는 영상 찾아보기</Button>
                 </div>
                 <div className="slate_bottom">
