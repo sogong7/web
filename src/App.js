@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<MainPage />} exact />
         <Route path="/search" element={<ResearchPage />} exact />
         <Route path="/recommend" element={<RecommendPage />} exact />
-        <Route path="/media" element={<MediaPage />} exact />
+        <Route path="/media/:mediaId" element={<MediaPage />} exact />
       </Routes>
     </BrowserRouter>
   );
