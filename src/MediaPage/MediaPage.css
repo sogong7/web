@@ -1,0 +1,46 @@
+@import "../reset.css";
+
+.media_page_wrap {
+    width: 100vw;
+    min-width: 1080px;
+    min-height: calc(100vh - 150px);
+    background-color: #e7e6e6;
+    display: table;
+}
+
+.media_page {
+    display: table-cell;
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.media_poster {
+    width: 300px;
+    height: 390px;
+    float: left;
+    margin: 0 20px 20px 0;   
+}
+
+.clear_float::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.media_info {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.media_info h1 {
+    color: #b93b2d;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.media_info .title {
+    color: #b93b2d;
+    font-weight: bold;
+}
