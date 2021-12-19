@@ -1,9 +1,10 @@
-import Header from './Header/Header.jsx'
+import Header from "./Header/Header.jsx";
+import Research from "./ResearchPage/ResearchPage";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Research />
     </div>
   );
 }
